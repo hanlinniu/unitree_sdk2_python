@@ -68,7 +68,7 @@ class SportModeTest:
         self.client.StopMove()
 
     def BalanceAttitude(self):
-        self.client.Euler(0.3, 0, 0)  # roll, pitch, yaw    # the final state imu_state rpy is [0.05479488521814346, 0.18178705871105194, 0.4119154214859009]
+        self.client.Euler(0.1, 0.2, 0.3)  # roll, pitch, yaw    # the final state imu_state rpy is [0.05479488521814346, 0.18178705871105194, 0.4119154214859009]
         self.client.BalanceStand()
 
     def TrajectoryFollow(self):
