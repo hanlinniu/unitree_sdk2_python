@@ -27,7 +27,7 @@ def LowStateHandler(msg: LowState_):
     print("imu_state : ", msg.imu_state)  # IMUState_(quaternion=[-0.9685593247413635, -0.0061267982237041, 0.0533742792904377, -0.2429129183292389], gyroscope=[-0.0010652643395587802, -0.0074568502604961395, -0.0063915858045220375], accelerometer=[0.8176198601722717, -0.011971008032560349, 9.576807022094727], rpy=[-0.01414297055453062, -0.10657048225402832, 0.4922139048576355], temperature=79)
     print("motor_state : ", msg.motor_state)  # 
     print("bms_state : ", msg.bms_state)  # BmsState_(version_high=1, version_low=14, status=8, soc=93, current=-939, cycle=5, bq_ntc=b'\x14\x14', mcu_ntc=b'\x18\x17', cell_vol=[4081, 4084, 4084, 4084, 4084, 4085, 4084, 4081, 0, 0, 0, 0, 0, 0, 0])
-    print("foot_force : ", msg.foot_force)  # [15, 14, 16, 16]
+    print("foot_force : ", msg.foot_force)  # stand [37, 17, 34, 35]      # sit [16, 14, 16, 17]
     print("foot_force_est : ", msg.foot_force_est)  # [0, 0, 0, 0]
     print("tick : ", msg.tick)  # 1885451
     print("wireless_remote : ", msg.wireless_remote)
