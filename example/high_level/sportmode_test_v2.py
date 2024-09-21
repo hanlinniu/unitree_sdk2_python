@@ -68,7 +68,7 @@ class SportModeTest:
         self.client.StopMove()
 
     def BalanceAttitude(self):
-        self.client.Euler(0.1, 0.2, 0.3)  # roll, pitch, yaw
+        self.client.Euler(0.3, 0, 0)  # roll, pitch, yaw    # the final state imu_state rpy is [0.05479488521814346, 0.18178705871105194, 0.4119154214859009]
         self.client.BalanceStand()
 
     def TrajectoryFollow(self):
@@ -133,6 +133,7 @@ robot_state = unitree_go_msg_dds__SportModeState_()
 def HighStateHandler(msg: SportModeState_):
     global robot_state
     robot_state = msg
+    print("imu_state rpy : ", msg.imu_state.rpy)
 
 
 if __name__ == "__main__":
@@ -151,19 +152,19 @@ if __name__ == "__main__":
     print("Start test !!!")
 
 
-    test.StandDown()
-    # while True:
-    #     test.t += test.dt
+    # test.StandUp()
+    while True:
+        test.t += test.dt
 
-    #     # test.StandUp()
-    #     test.StandUpDown()
-    #     # test.VelocityMove()
-    #     # test.BalanceAttitude()
-    #     # test.TrajectoryFollow()
-    #     # test.SpecialMotions()
+        # test.StandUp()
+        # test.StandUpDown()
+        # test.VelocityMove()
+        test.BalanceAttitude()
+        # test.TrajectoryFollow()
+        # test.SpecialMotions()
         
 
-    #     time.sleep(test.dt)
+        time.sleep(test.dt)
 
     # test.StandDown()
 
