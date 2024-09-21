@@ -63,7 +63,7 @@ class SportModeTest:
     def VelocityMove(self):
         elapsed_time = 1
         for i in range(int(elapsed_time / self.dt)):
-            self.client.Move(0.3, 0, 0.3)  # vx, vy vyaw
+            self.client.Move(-0.3, 0, 0)  # vx, vy vyaw
             time.sleep(self.dt)
         self.client.StopMove()
 
@@ -75,7 +75,7 @@ class SportModeTest:
         time_seg = 0.2
         time_temp = self.t - time_seg
         path = []
-        for i in range(10):   # SPORT_PATH_POINT_SIZE
+        for i in range(5):   # SPORT_PATH_POINT_SIZE
             time_temp += time_seg
 
             px_local = 0.5 * math.sin(0.5 * time_temp)
@@ -109,8 +109,8 @@ class SportModeTest:
 
             path.append(path_point_tmp)
 
-            print("path is ", path)
-            print("path_point_tmp is ", path_point_tmp)
+            print("path is ", path)   # path is  [<unitree_sdk2py.go2.sport.sport_client.PathPoint object at 0x7f70f2937fa0>]
+            print("path_point_tmp is ", path_point_tmp)  # # path_point_tmp is  <unitree_sdk2py.go2.sport.sport_client.PathPoint object at 0x7f70f292f970>
 
             self.client.TrajectoryFollow(path)
             
@@ -151,18 +151,19 @@ if __name__ == "__main__":
     print("Start test !!!")
 
 
-    # test.StandUp()
-    while True:
-        test.t += test.dt
+    test.StandDown()
+    # while True:
+    #     test.t += test.dt
 
-        # test.StandUp()
-        # test.StandUpDown()
-        test.VelocityMove()
-        # test.BalanceAttitude()
-        # test.TrajectoryFollow()
-        # test.SpecialMotions()
+    #     # test.StandUp()
+    #     test.StandUpDown()
+    #     # test.VelocityMove()
+    #     # test.BalanceAttitude()
+    #     # test.TrajectoryFollow()
+    #     # test.SpecialMotions()
+        
 
-        time.sleep(test.dt)
+    #     time.sleep(test.dt)
 
     # test.StandDown()
 
