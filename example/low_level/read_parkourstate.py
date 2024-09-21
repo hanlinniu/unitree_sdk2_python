@@ -40,7 +40,6 @@ def LowStateHandler(msg: LowState_):
     print("fan_frequency : ", msg.fan_frequency)
     print("reserve : ", msg.reserve)
     print("crc : ", msg.crc)
-    print(" : ", msg.)
 
 
     # head: types.array[types.uint8, 2]
