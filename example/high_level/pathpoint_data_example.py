@@ -1,0 +1,10 @@
+[PathPoint_(t_from_start=0.0, x=0.0, y=0.0, yaw=0.0, vx=0.0, vy=0.0, vyaw=0.0), 
+ PathPoint_(t_from_start=0.0, x=0.0, y=0.0, yaw=0.0, vx=0.0, vy=0.0, vyaw=0.0), 
+ PathPoint_(t_from_start=0.0, x=0.0, y=0.0, yaw=0.0, vx=0.0, vy=0.0, vyaw=0.0), 
+ PathPoint_(t_from_start=0.0, x=0.0, y=0.0, yaw=0.0, vx=0.0, vy=0.0, vyaw=0.0), 
+ PathPoint_(t_from_start=0.0, x=0.0, y=0.0, yaw=0.0, vx=0.0, vy=0.0, vyaw=0.0), 
+ PathPoint_(t_from_start=0.0, x=0.0, y=0.0, yaw=0.0, vx=0.0, vy=0.0, vyaw=0.0), 
+ PathPoint_(t_from_start=0.0, x=0.0, y=0.0, yaw=0.0, vx=0.0, vy=0.0, vyaw=0.0), 
+ PathPoint_(t_from_start=0.0, x=0.0, y=0.0, yaw=0.0, vx=0.0, vy=0.0, vyaw=0.0), 
+ PathPoint_(t_from_start=0.0, x=0.0, y=0.0, yaw=0.0, vx=0.0, vy=0.0, vyaw=0.0), 
+ PathPoint_(t_from_start=0.0, x=0.0, y=0.0, yaw=0.0, vx=0.0, vy=0.0, vyaw=0.0)]
