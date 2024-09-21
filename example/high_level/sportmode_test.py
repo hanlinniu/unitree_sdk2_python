@@ -32,9 +32,9 @@ class SportModeTest:
         self.yaw0 = robot_state.imu_state.rpy[2]
 
     def StandUpDown(self):
-        self.client.StandDown()
-        print("Stand down !!!")
-        time.sleep(1)
+        # self.client.StandDown()
+        # print("Stand down !!!")
+        # time.sleep(1)
 
         self.client.StandUp()
         print("Stand up !!!")
