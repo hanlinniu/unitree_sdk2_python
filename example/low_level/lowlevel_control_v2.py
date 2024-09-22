@@ -44,14 +44,14 @@ if __name__ == '__main__':
         cmd.motor_cmd[i].tau = 0
 
     while True:        
-        # Toque control, set RL_2 toque
+        # Toque control, set RL_2 toque                left hind leg calf joint
         cmd.motor_cmd[go2.LegID["RL_2"]].q = 0.0 # Set to stop position(rad)
         cmd.motor_cmd[go2.LegID["RL_2"]].kp = 0.0
         cmd.motor_cmd[go2.LegID["RL_2"]].dq = 0.0 # Set to stop angular velocity(rad/s)
         cmd.motor_cmd[go2.LegID["RL_2"]].kd = 0.0
         cmd.motor_cmd[go2.LegID["RL_2"]].tau = 1.0 # target toque is set to 1N.m
 
-        # Position(rad) control, set RL_0 rad
+        # Position(rad) control, set RL_0 rad          left hind leg hip joint
         cmd.motor_cmd[go2.LegID["RL_0"]].q = 0.0  # Target angular(rad)
         cmd.motor_cmd[go2.LegID["RL_0"]].kp = 10.0 # Position(rad) control kp gain
         cmd.motor_cmd[go2.LegID["RL_0"]].dq = 0.0  # Target angular velocity(rad/ss)
